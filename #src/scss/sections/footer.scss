@@ -1,0 +1,142 @@
+.footer{
+	background-color: #3D4853;
+	cursor: default;
+	&__inner{
+		padding: 63px 0;
+	}
+	&__columns{
+		display: grid;
+		grid-template-columns: repeat( auto-fit, minmax(156px, 1fr) );
+		gap:30px;
+		margin-bottom: 33px;
+	}
+	&__column{
+		@media (max-width: 381px) {
+			text-align: center;
+		}
+		&-icon._13{
+			font-size: 34px;
+			color: #F49879;
+			display: inline-block;
+			margin-bottom: 27px;
+		}
+		&-text{
+			@include fontText(Roboto, 14px, 400);
+			line-height: 24 / 14 * 100%;
+			color: #BDCAD8;
+		}
+		&-title{
+			@include fontText(Roboto, 14px, 400);
+			line-height: 20 / 14 * 100%;
+			color: #BDCAD8;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			margin-bottom: 34px;
+			display: block;
+		}
+		&-item:not(:last-child){
+			margin-bottom: 18px;
+		}
+		&-link{
+			@include fontText(Roboto, 14px, 400);
+			line-height: 100%;
+			color: white;
+			@media (min-width: $md2 + px) {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		&-socials{
+			font-size: 24px;
+			color: white;
+			transition: color 0.3s ease 0s;
+			&:not(:last-child){
+				margin-right: 16px;
+			}
+			@media (min-width: $md2 + px) {
+				&:hover {
+					color: #F53838;
+				}
+			}
+		}
+		&-item{
+			&.new{
+				display: flex;
+				align-items: center;
+				background-color: #445260;
+				border-radius: 8px;
+				padding: 2px 8px;
+				max-width: 225.59px;
+				&::after{
+					content: url(../img/footer/new.png);
+					margin-left: 15px;
+				}
+				@media (max-width: 381px) {
+					margin: 0 auto;
+				}
+				margin-top: 28px;
+			}
+		}
+	}
+	&__copyright{
+		display: flex;
+		align-items: center;
+		& *:not(:last-child){
+			margin-right: 20px;
+			@media (max-width: 753px) {
+				margin-right: 0;
+			}
+		}
+		@media (max-width: 753px) {
+			display: grid;
+			grid-template-columns: repeat( auto-fit, minmax(156px, 1fr) );
+			gap:30px;
+		}
+		@media (max-width: 381px) {
+			text-align: center;
+		}
+	}
+	&__content{
+		&-text{
+			@include fontText(Roboto, 11px, 400);
+			line-height: 21 / 11 * 100%;
+			color: white;
+			display: block;
+		}
+		&-link{
+			@include fontText(Roboto, 12px, 400);
+			line-height: 100%;
+			color: white;
+			&:not(:last-child){
+				margin-right: 12px;
+			}
+			@media (min-width: $md2 + px) {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		&:last-child::before{
+			content: url("../img/footer/frame.png");
+			display: block;
+			margin-bottom: 6px;
+		}
+		&:first-child{
+			flex: 0 1 255.59px;
+		}
+		&:last-child{
+			flex: 0 1 290px;
+		}
+	}
+	&__btn{
+		padding: 12px 17px 15px 17px;
+		background-color: transparent;
+		color: white;
+		border: 2px solid #BDCAD8;
+		
+	}
+	&__button{
+		flex: 1 1 auto;
+	}
+}

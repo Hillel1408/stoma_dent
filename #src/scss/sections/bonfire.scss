@@ -1,0 +1,63 @@
+.bonfire{
+	background-color: #3D4853;
+	cursor: default;
+	&__inner{
+		padding: 120px 0;
+	}
+	&__columns{
+		display: flex;
+		align-items: center;
+		@media (max-width: 750px) {
+			flex-direction: column-reverse;
+		}
+	}
+	&__content{
+		flex: 0 1 663px;
+		position: relative;
+		z-index: 1;
+		@media (max-width: 750px) {
+			flex: 0 1 auto;
+		}
+		&-title{
+			font-family: Roboto;
+			font-weight: 400;
+			@include adaptiv-font(64, 28, 1);
+			line-height: 77 / 64 * 100%;
+			color: white;
+			margin-bottom: 23px;
+		}
+		&-btn{
+			font-size: 13px;
+			padding: 14px 24px 19px 24px;
+		}
+	}
+	&__img{
+		margin-left: -143px;
+		flex: 0 1 622px;
+		position: relative;
+		z-index: 0;
+		@media (max-width: 750px) {
+			margin-left: 0;
+			flex: 0 1 auto;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		& img{
+			width: 100%;
+			@media (min-width: 751px) {
+				height: 474px;
+				object-fit: cover;
+			}
+
+		}
+		&::after{
+			content: url("../img/bonfire/frame.png");
+			position: absolute;
+			bottom: -80px;
+			right: -74px;
+			@media (max-width: 750px) {
+				display: none;
+			}
+		}
+	}
+}
