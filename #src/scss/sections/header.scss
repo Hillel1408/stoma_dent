@@ -133,6 +133,7 @@
     &__basket {
         padding-left: 30px;
         position: relative;
+        cursor: pointer;
         span {
             display: flex;
             align-items: center;
@@ -174,6 +175,9 @@
             flex-wrap: wrap;
             @media (max-width: ($md2 + px)) {
                 padding-left: 0;
+            }
+            @media (max-width: ($md4 + px)) {
+                justify-content: center;
             }
         }
         &-link {
