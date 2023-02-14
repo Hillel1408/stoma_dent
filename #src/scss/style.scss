@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import 'fonts';
 @import 'icons';
 
-$minWidth: 320px;
-$maxWidth: 1440px;
-$maxWidthContainer: 1248px;
-$md1: $maxWidthContainer + 40px;
-$md2: 991.98px;
-$md3: 767.98px;
-$md4: 575.98px;
+$minWidth: 320;
+$maxWidth: 1512;
+$maxWidthContainer: 1142;
+$md1: $maxWidthContainer + 30;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 575.98;
 
-$fontFamily: 'Roboto', sans-serif;
+$fontFamily: 'Open Sans', sans-serif;
 
 @import 'null';
 
@@ -21,12 +20,12 @@ $fontFamily: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
 }
-._container {
-    max-width: $maxWidthContainer;
+.container {
+    max-width: $maxWidthContainer + px;
     margin: 0 auto;
-    @media (max-width: $md1) {
+    @media (max-width: ($md1 + px)) {
         max-width: none;
-        padding: 0 20px;
+        padding: 0 15px;
     }
 }
 
