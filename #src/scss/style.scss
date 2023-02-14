@@ -1,128 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import "mixins";
-@import "fonts";
-@import "icons";
+@import 'fonts';
+@import 'icons';
 
 $minWidth: 320px;
-$maxWidth: 1440;
-$maxWidthContainer: 1248;
-$md1: $maxWidthContainer + 40;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 575.98;
+$maxWidth: 1440px;
+$maxWidthContainer: 1248px;
+$md1: $maxWidthContainer + 40px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 575.98px;
 
-$fontFamily: "Roboto", sans-serif;
+$fontFamily: 'Roboto', sans-serif;
 
-@import "null";
-
-body{
-	&::-webkit-scrollbar{
-		width: 10px;
-		background-color: #f9f9fd;	
-	}
-	&::-webkit-scrollbar-thumb{
-		background-color: #F49879;
-		border-radius: 30px;
-	}
-}
-
-body.lock {
-	overflow: hidden !important;
-}
+@import 'null';
 
 .wrapper {
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 ._container {
-	max-width: $maxWidthContainer + px;
-	margin: 0 auto;
-	@media (max-width: $md1+px) {
-		max-width: none;
-		padding: 0 20px;
-	}
-}
-.btn{
-	@include fontText(Roboto, 10px, 400);
-	line-height: 11 / 10 * 100%;
-	color: #3D4853;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	transition: background-color 0.3s ease 0s;
-	background-color: white;
-	box-shadow: 0px 0px 0px #BDCAD8;
-	border-radius: 5px;
-	text-transform: uppercase;
-	letter-spacing: 2.1px;
-	@media (min-width: $md2 + px) {
-		&:hover {
-			background-color: #F53838;
-			color: white;
-		}
-	}
-}
-.title{
-	font-family: Roboto;
-	font-weight: 400;
-	@include adaptiv-font(72, 34, 1);
-	line-height: 86 / 72 * 100%;
-	color: #111111;
-}
-.text{
-	font-family: Roboto;
-	font-weight: 400;
-	@include adaptiv-font(24, 18, 1);
-	line-height: 36 / 24 * 100%;
-	color: #111111;
-}
-.sp{
-	@include fontText(Roboto, 12px, 400);
-	line-height: 17 / 12 * 100%;
-	color: #111111;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-.subtitle{
-	font-family: Roboto;
-	font-weight: 400;
-	@include adaptiv-font(36, 24, 1);
-	line-height: 58 / 36 * 100%;
-}
-.inp{
-	display: block;
-	border: 1px solid #c9c9c9;
-	width: 100%;
-	border-radius: 5px;
-	height: 50px;
-	padding: 0 20px;
-	margin-bottom: 20px;
-	@include fontText(Lato, 16px, 400);
-	line-height: 22 / 16 * 100%;
-	color: black;
-}
-.lb{
-	display: block;
-	margin-bottom: 10px;
-	font-size: 16px;
-	&_color{
-		color: #527d80;
-	}
-}
-.btn-none{
-	visibility: hidden;
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+    @media (max-width: $md1) {
+        max-width: none;
+        padding: 0 20px;
+    }
 }
 
-@import "./sections/header";
-@import "./sections/intro";
-@import "./sections/partners";
-@import "./sections/splits";
-@import "./sections/unlock";
-@import "./sections/selling";
-@import "./sections/bonfire";
-@import "./sections/footer";
-@import "./sections/modal";
+@import './sections/header';
+@import './sections/footer';
