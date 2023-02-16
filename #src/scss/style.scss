@@ -29,7 +29,11 @@ $fontFamily: 'Open Sans', sans-serif;
         padding: 0 15px;
     }
 }
+body.lock {
+    overflow: hidden !important;
+}
 
 @import './sections/header';
 @import './sections/main';
 @import './sections/footer';
+@import './sections/popup';
