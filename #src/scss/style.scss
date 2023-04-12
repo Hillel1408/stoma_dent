@@ -32,8 +32,21 @@ $fontFamily: 'Open Sans', sans-serif;
 body.lock {
     overflow: hidden !important;
 }
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+    color: #004991;
+}
+.text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #333333;
+}
 
 @import './sections/header';
 @import './sections/main';
 @import './sections/footer';
 @import './sections/popup';
+@import './sections/crumbs';
+@import './sections/catalog';
