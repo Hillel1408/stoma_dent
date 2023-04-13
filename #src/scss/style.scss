@@ -52,6 +52,44 @@ body.lock {
         font-size: 12px;
     }
 }
+.custom-checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 12px;
+    color: #000000;
+}
+.custom-checkbox > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox > span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom-checkbox > span::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #bfbfbf;
+    border-radius: 4px;
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.custom-checkbox > input:checked + span::before {
+    border-color: #004991;
+    background-color: #004991;
+    background-image: url('../img/icon-6.svg');
+    background-size: auto;
+}
 
 @import './sections/header';
 @import './sections/main';

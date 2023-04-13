@@ -1,7 +1,36 @@
 .catalog-inner {
     display: flex;
     gap: 29px;
+    margin-bottom: 129px;
     &__filters {
         flex: 0 0 212px;
+        &-title {
+            display: block;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 13 / 16 * 100%;
+            color: #004991;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #efefef;
+            margin-bottom: 12px;
+        }
+        &-flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-link {
+            text-decoration-line: underline;
+            color: #004991;
+            font-size: 13px;
+            line-height: 12 / 13 * 100%;
+        }
+        &-block {
+            margin-bottom: 28px;
+        }
+        &-checkbox {
+            &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+        }
     }
 }
