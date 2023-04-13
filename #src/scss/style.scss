@@ -35,13 +35,22 @@ body.lock {
 .title {
     font-weight: 600;
     font-size: 24px;
-    line-height: 20px;
+    line-height: 20 / 24 * 100%;
     color: #004991;
+    @media (max-width: (783px)) {
+        font-size: 20px;
+    }
+    @media (max-width: (360px)) {
+        font-size: 18px;
+    }
 }
 .text {
     font-size: 14px;
-    line-height: 19px;
+    line-height: 19 / 14 * 100%;
     color: #333333;
+    @media (max-width: (783px)) {
+        font-size: 12px;
+    }
 }
 
 @import './sections/header';
@@ -50,3 +59,4 @@ body.lock {
 @import './sections/popup';
 @import './sections/crumbs';
 @import './sections/catalog';
+@import './sections/catalog-inner';
