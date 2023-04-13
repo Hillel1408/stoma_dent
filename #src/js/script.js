@@ -4,6 +4,18 @@ $(document).ready(function () {
         arrows: true,
         slidesToShow: 1,
     });
+    $('.product__slider-big').slick({
+        arrows: false,
+        dots: false,
+        asNavFor: '.product__slider-small',
+    });
+    $('.product__slider-small').slick({
+        asNavFor: '.product__slider-big',
+        focusOnSelect: true,
+        arrows: false,
+        dots: false,
+        slidesToShow: 'auto',
+    });
 });
 
 const navIcon = document.querySelector('.header__nav-icon');

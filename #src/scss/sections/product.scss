@@ -1,0 +1,196 @@
+.product {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 30px;
+    @media (max-width: (920px)) {
+        gap: 9px;
+    }
+    &__slider {
+        width: 500px;
+        @media (max-width: (920px)) {
+            width: 400px;
+        }
+        &-big {
+            width: 100%;
+            &-item {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 500px;
+                    object-fit: cover;
+                    @media (max-width: (920px)) {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+        &-small {
+            margin-top: 11px;
+            .slick-track {
+                gap: 14px;
+            }
+            &-item {
+                cursor: pointer;
+                width: 68px !important;
+                img {
+                    height: 68px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &__attributes {
+        margin-top: 35px;
+        margin-bottom: 31px;
+        li {
+            &:not(:last-child) {
+                margin-bottom: 12px;
+            }
+            span {
+                color: #004991;
+                font-weight: 700;
+            }
+        }
+    }
+    &__price {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 23px;
+        color: #004991;
+    }
+    &__block {
+        margin-top: 26px;
+        display: flex;
+        gap: 26px;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #efefef;
+        flex-wrap: wrap;
+    }
+    &__count {
+        display: flex;
+        gap: 6px;
+        button {
+            width: 34px;
+            height: 34px;
+            background: #efefef;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        span {
+            width: 34px;
+            height: 34px;
+            border: 1px solid #efefef;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__marks {
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 12px;
+        color: #004991;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    &__content {
+        flex: 0 1 493px;
+    }
+    &__reviews {
+        display: flex;
+        align-items: center;
+        margin-top: 27px;
+        flex-wrap: wrap;
+        &-btn {
+            color: #004991;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 13px;
+        }
+        &-count {
+            margin-right: 40px;
+            margin-left: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 13px;
+            color: #004991;
+        }
+        &-stars {
+            width: fit-content;
+            svg {
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3) {
+                    path {
+                        fill: #ffe73a;
+                        stroke: #ffe73a;
+                    }
+                }
+            }
+        }
+    }
+    &__socials {
+        margin-top: 29px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 14px;
+        line-height: 12px;
+        & > div {
+            display: flex;
+            gap: 4px;
+        }
+    }
+    &__tabs {
+        display: flex;
+        gap: 42px;
+        background: #efefef;
+        border-radius: 12px;
+        padding: 4px;
+        width: fit-content;
+        margin-bottom: 23px;
+        li {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #616161;
+            padding: 8px 16px;
+            &.active {
+                background: #ffffff;
+                border-radius: 10px;
+                color: #004991;
+            }
+        }
+    }
+    &__text {
+        max-width: 852px;
+        p {
+            margin-bottom: 15px;
+            span {
+                color: #336699;
+                font-weight: 700;
+            }
+        }
+        &-block {
+            margin-top: 30px;
+            margin-bottom: 27px;
+            ul {
+                padding-left: 60px;
+                li {
+                    list-style-type: initial;
+                }
+            }
+            p {
+                color: #336699;
+                font-weight: 700;
+            }
+        }
+    }
+}
