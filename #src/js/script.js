@@ -40,3 +40,18 @@ navItems.forEach((item) => {
         item.parentNode.childNodes[3].classList.toggle('active');
     });
 });
+
+const filtersBtn = document.querySelector('.catalog-inner__filters-btn');
+const filters = document.querySelector('.catalog-inner__filters');
+const modal = document.querySelector('.modal');
+const closeBtn = document.querySelector('.catalog-inner__filters-icon');
+
+filtersBtn.addEventListener('click', () => {
+    filters.classList.toggle('active');
+    modal.classList.toggle('active');
+});
+
+closeBtn.addEventListener('click', () => {
+    filters.classList.toggle('active');
+    modal.classList.toggle('active');
+});
