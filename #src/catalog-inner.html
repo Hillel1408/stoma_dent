@@ -508,5 +508,25 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const filtersBtn = document.querySelector(
+                '.catalog-inner__filters-btn'
+            );
+            const filters = document.querySelector('.catalog-inner__filters');
+            const modal = document.querySelector('.modal');
+            const closeBtn = document.querySelector(
+                '.catalog-inner__filters-icon'
+            );
+
+            filtersBtn.addEventListener('click', () => {
+                filters.classList.toggle('active');
+                modal.classList.toggle('active');
+            });
+
+            closeBtn.addEventListener('click', () => {
+                filters.classList.toggle('active');
+                modal.classList.toggle('active');
+            });
+        </script>
     </body>
 </html>

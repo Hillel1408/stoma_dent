@@ -186,12 +186,21 @@
                         </div>
                     </div>
                     <ul class="product__tabs">
-                        <li class="active">Описание</li>
-                        <li>Характеристики</li>
-                        <li>Отзывы</li>
-                        <li>Инструкции</li>
+                        <li class="product__tabs-tab active" data-id="1">
+                            Описание
+                        </li>
+                        <li class="product__tabs-tab" data-id="2">
+                            Характеристики
+                        </li>
+                        <li class="product__tabs-tab" data-id="3">Отзывы</li>
+                        <li class="product__tabs-tab" data-id="4">
+                            Инструкции
+                        </li>
                     </ul>
-                    <div class="product__text text">
+                    <div
+                        class="product__text product__tabs-block active text"
+                        data-id="1"
+                    >
                         <p>
                             <span>Несравненная эргономичность:</span> рабочее
                             место врача A-dec 500 имеет лучшие в отрасли
@@ -324,5 +333,24 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            const tabsItems = document.querySelectorAll('.product__tabs-tab');
+            const tabsBlock = document.querySelectorAll('.product__tabs-block');
+            console.log(tabsItems);
+            for (let elem of tabsItems) {
+                elem.addEventListener('click', function () {
+                    for (let elem of tabsItems) {
+                        elem.classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    for (let elem of tabsBlock) {
+                        elem.classList.remove('active');
+                        if (this.dataset.id == elem.dataset.id) {
+                            elem.classList.add('active');
+                        }
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
