@@ -1,0 +1,28 @@
+.lecturers {
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 27px;
+    display: grid;
+    padding-bottom: 68px;
+    &__item {
+        img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            margin-bottom: 14px;
+            border-radius: 12px;
+            @media (max-width: (974px)) {
+                height: 210px;
+            }
+            @media (max-width: (360px)) {
+                height: 332px;
+            }
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 139%;
+            color: #004991;
+            margin-bottom: 10px;
+        }
+    }
+}
