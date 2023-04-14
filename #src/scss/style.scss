@@ -109,22 +109,6 @@ body.lock {
         font-size: 10px;
     }
 }
-.modal {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 0;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease 0s;
-    z-index: 3;
-    &.active {
-        opacity: 1;
-        visibility: visible;
-    }
-}
 
 @import './sections/header';
 @import './sections/main';
@@ -134,3 +118,4 @@ body.lock {
 @import './sections/catalog';
 @import './sections/catalog-inner';
 @import './sections/product';
+@import './sections/review-modal';

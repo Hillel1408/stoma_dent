@@ -165,6 +165,7 @@
         }
         &-stars {
             width: fit-content;
+            display: flex;
             svg {
                 &.active path {
                     fill: #ffe73a;
@@ -228,19 +229,27 @@
         }
     }
     &__reviews2 {
-        max-width: 642px;
+        max-width: 627px;
         padding-bottom: 54px;
         &-block {
             background: #f3f3f3;
             border-radius: 12px;
             padding: 15px 15px 20px 15px;
+            margin-bottom: 15px;
         }
         &-flex {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-bottom: 12px;
+            span {
+                color: #004991;
+                font-weight: 600;
+                max-width: 187px;
+            }
         }
         &-stars {
+            display: flex;
             svg.active path {
                 fill: #ffe73a;
                 stroke: #ffe73a;
