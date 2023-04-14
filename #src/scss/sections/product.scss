@@ -166,13 +166,9 @@
         &-stars {
             width: fit-content;
             svg {
-                &:nth-child(1),
-                &:nth-child(2),
-                &:nth-child(3) {
-                    path {
-                        fill: #ffe73a;
-                        stroke: #ffe73a;
-                    }
+                &.active path {
+                    fill: #ffe73a;
+                    stroke: #ffe73a;
                 }
             }
         }
@@ -229,6 +225,78 @@
                 padding: 6px 8px;
                 font-size: 14px;
             }
+        }
+    }
+    &__reviews2 {
+        max-width: 642px;
+        padding-bottom: 54px;
+        &-block {
+            background: #f3f3f3;
+            border-radius: 12px;
+            padding: 15px 15px 20px 15px;
+        }
+        &-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-stars {
+            svg.active path {
+                fill: #ffe73a;
+                stroke: #ffe73a;
+            }
+        }
+    }
+    &__instructions {
+        max-width: 642px;
+        padding-bottom: 213px;
+        &-block {
+            padding-bottom: 19px;
+            border-bottom: 1px solid #efefef;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 19px;
+            flex-wrap: wrap;
+            gap: 8px;
+            @media (max-width: (480px)) {
+                flex-direction: column;
+                align-items: baseline;
+            }
+            span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                color: #000000;
+            }
+            button {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #004991;
+                padding: 5px 18px;
+                border: 1px solid #004991;
+                border-radius: 4px;
+                background-color: transparent;
+            }
+        }
+    }
+    &__characteristics {
+        padding-bottom: 59px;
+        max-width: 337px;
+        &-block {
+            display: flex;
+            align-items: baseline;
+            gap: 5px;
+            margin-bottom: 12px;
+            span:last-child {
+                color: #004991;
+                font-weight: 700;
+            }
+        }
+        &-dotted {
+            flex: 1 1 auto;
+            border-bottom: 2px dotted #616161;
         }
     }
     &__text {
