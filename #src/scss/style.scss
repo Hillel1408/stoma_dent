@@ -35,7 +35,7 @@ body.lock {
 .title {
     font-weight: 600;
     font-size: 24px;
-    line-height: 20 / 24 * 100%;
+    line-height: 26 / 24 * 100%;
     color: #004991;
     @media (max-width: (783px)) {
         font-size: 20px;
@@ -122,3 +122,4 @@ body.lock {
 @import './sections/cart';
 @import './sections/stock';
 @import './sections/stock-inner';
+@import './sections/about-us';
