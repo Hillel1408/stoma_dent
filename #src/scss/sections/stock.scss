@@ -1,0 +1,41 @@
+.stock {
+    display: flex;
+    column-gap: 18px;
+    row-gap: 31px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    &__item {
+        @media (max-width: (360px)) {
+            width: 100%;
+        }
+        &-block {
+            padding: 13px 35px 10px 35px;
+            border: 1px solid #efefef;
+            border-radius: 12px;
+            margin-bottom: 18px;
+            @media (max-width: (360px)) {
+                padding: 16px 45px 12px 45px;
+            }
+        }
+        &-img {
+            width: 190px;
+            @media (max-width: (360px)) {
+                width: 100%;
+            }
+            img {
+                height: 254px;
+                width: 100%;
+                object-fit: cover;
+                @media (max-width: (360px)) {
+                    height: 325px;
+                }
+            }
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: black;
+        }
+    }
+}
