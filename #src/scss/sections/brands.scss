@@ -1,11 +1,13 @@
 .brands {
     display: flex;
     gap: 68 / 924 * 100%;
+    grid-gap: 68 / 924 * 100%;
     max-width: 924px;
     padding-bottom: 60px;
     @media (max-width: (783px)) {
         flex-direction: column;
         gap: 20px;
+        grid-gap: 20px;
     }
     &__flex1 {
         width: 534 / 924 * 100%;

@@ -6,9 +6,11 @@
         margin-bottom: 11px;
         display: flex;
         gap: 11px;
+        grid-gap: 11px;
         @media (max-width: (360px)) {
             flex-direction: column-reverse;
             gap: 9px;
+            grid-gap: 9px;
         }
         &:last-child {
             border-bottom: none;

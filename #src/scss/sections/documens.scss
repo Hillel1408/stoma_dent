@@ -25,6 +25,7 @@
         margin-top: 35px;
         display: flex;
         gap: 4px;
+        grid-gap: 4px;
         background: #efefef;
         border-radius: 12px;
         padding: 4px;
@@ -38,6 +39,7 @@
         }
         @media (max-width: (460px)) {
             gap: 4px;
+            grid-gap: 4px;
             margin-bottom: 16px;
         }
         &-block {

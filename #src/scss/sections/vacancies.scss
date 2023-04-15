@@ -15,6 +15,7 @@
             justify-content: space-between;
             cursor: pointer;
             gap: 10px;
+            grid-gap: 10px;
             &.active svg {
                 transform: rotate(45deg);
             }

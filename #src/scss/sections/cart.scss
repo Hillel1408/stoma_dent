@@ -51,11 +51,13 @@
         &-flex {
             display: flex;
             gap: 26px;
+            grid-gap: 26px;
             align-items: center;
         }
         &-flex2 {
             display: flex;
             gap: 42px;
+            grid-gap: 42px;
             align-items: center;
             @media (max-width: (710px)) {
                 justify-content: space-between;
@@ -76,6 +78,7 @@
         &-count {
             display: flex;
             gap: 6px;
+            grid-gap: 6px;
             button {
                 width: 34px;
                 height: 34px;
@@ -102,6 +105,7 @@
             flex-direction: column;
             align-items: baseline;
             gap: 12px;
+            grid-gap: 12px;
         }
     }
     &__total {
@@ -135,12 +139,15 @@
     &__flex {
         display: flex;
         gap: 75 / 1085 * 100%;
+        grid-gap: 75 / 1085 * 100%;
         @media (max-width: (783px)) {
             flex-direction: column;
             gap: 45px;
+            grid-gap: 45px;
         }
         @media (max-width: (470px)) {
             gap: 31px;
+            grid-gap: 31px;
         }
     }
     &__title {
@@ -172,9 +179,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 27px;
+        grid-gap: 27px;
         @media (max-width: (470px)) {
             grid-template-columns: 1fr;
             gap: 16px;
+            grid-gap: 16px;
         }
         label {
             font-size: 14px;
@@ -188,6 +197,7 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
+            grid-gap: 16px;
         }
     }
     &__input {
@@ -236,6 +246,7 @@
         display: flex;
         align-items: center;
         gap: 6px;
+        grid-gap: 6px;
         font-size: 14px;
         line-height: 12px;
         color: black;

@@ -1,7 +1,9 @@
 .stock {
     display: flex;
     column-gap: 18px;
+    grid-column-gap: 18px;
     row-gap: 31px;
+    grid-row-gap: 31px;
     flex-wrap: wrap;
     margin-bottom: 80px;
     &__item {

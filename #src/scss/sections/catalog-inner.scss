@@ -2,6 +2,7 @@
     display: flex;
     align-items: baseline;
     gap: 29px;
+    grid-gap: 29px;
     margin-bottom: 129px;
     @media (max-width: 450px) {
         margin-bottom: 39px;
@@ -23,6 +24,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            grid-gap: 10px;
             span {
                 border: 1px solid #004991;
                 border-radius: 26px;
@@ -33,6 +35,7 @@
                 display: flex;
                 align-items: center;
                 gap: 4px;
+                grid-gap: 4px;
                 button {
                     width: 14px;
                     height: 14px;
@@ -155,6 +158,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 13px;
+        grid-gap: 13px;
         &-wrap {
             flex: 1 1 auto;
         }
@@ -166,6 +170,7 @@
         }
         @media (max-width: 450px) {
             gap: 10px;
+            grid-gap: 10px;
         }
     }
     &__item {
@@ -228,6 +233,7 @@
     &__pagination {
         display: flex;
         gap: 4px;
+        grid-gap: 4px;
         &-link {
             display: flex;
             width: 26px;
@@ -253,6 +259,7 @@
             margin-top: 65px;
             display: flex;
             gap: 23px;
+            grid-gap: 23px;
             align-items: center;
             @media (max-width: 450px) {
                 margin-top: 38px;

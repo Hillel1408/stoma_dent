@@ -5,6 +5,7 @@
         align-items: center;
         margin-bottom: 40px;
         gap: 10px;
+        grid-gap: 10px;
         @media (max-width: (783px)) {
             margin-bottom: 30px;
         }
@@ -12,6 +13,7 @@
             margin-bottom: 20px;
             flex-direction: column;
             gap: 0;
+            grid-gap: 0;
             align-items: baseline;
         }
     }
@@ -31,17 +33,20 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-bottom: 36px;
         gap: 26px;
+        grid-gap: 26px;
         @media (max-width: (1070px)) {
             grid-template-columns: 1fr 1fr 1fr;
         }
         @media (max-width: (783px)) {
             gap: 13px;
+            grid-gap: 13px;
         }
         @media (max-width: (710px)) {
             grid-template-columns: 1fr 1fr;
         }
         @media (max-width: (480px)) {
             gap: 8px;
+            grid-gap: 8px;
         }
         @media (max-width: (480px)) {
             margin-bottom: 25px;

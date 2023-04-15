@@ -1,6 +1,7 @@
 .lecturers {
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     gap: 27px;
+    grid-gap: 27px;
     display: grid;
     padding-bottom: 68px;
     &__item {

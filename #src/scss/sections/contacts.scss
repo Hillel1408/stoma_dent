@@ -2,13 +2,16 @@
     padding-bottom: 23px;
     display: flex;
     gap: 20px;
+    grid-gap: 20px;
     //align-items: baseline;
     @media (max-width: (950px)) {
         gap: 20 / 950 * 100%;
+        grid-gap: 20 / 950 * 100%;
     }
     @media (max-width: (750px)) {
         flex-direction: column;
         gap: 16px;
+        grid-gap: 16px;
     }
     &__spoiler {
         background: #efefef;
@@ -38,6 +41,7 @@
             justify-content: space-between;
             cursor: pointer;
             gap: 10px;
+            grid-gap: 10px;
             &.active svg {
                 transform: rotate(45deg);
             }
@@ -81,6 +85,7 @@
         &-qrCode {
             display: flex;
             gap: 23px;
+            grid-gap: 23px;
             margin-top: 40px;
             margin-bottom: 33px;
             & > div {

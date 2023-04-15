@@ -1,15 +1,18 @@
 .product {
     display: flex;
     gap: 35px;
+    grid-gap: 35px;
     margin-bottom: 30px;
     @media (max-width: (920px)) {
         gap: 9px;
+        grid-gap: 9px;
         @media (max-width: (620px)) {
             flex-direction: column;
         }
     }
     @media (max-width: (460px)) {
         gap: 25px;
+        grid-gap: 25px;
     }
     &__slider {
         width: 500px;
@@ -49,6 +52,7 @@
             margin-top: 11px;
             .slick-track {
                 gap: 14px;
+                grid-gap: 14px;
             }
             &-item {
                 cursor: pointer;
@@ -98,6 +102,7 @@
         margin-top: 26px;
         display: flex;
         gap: 26px;
+        grid-gap: 26px;
         align-items: center;
         padding-bottom: 30px;
         border-bottom: 1px solid #efefef;
@@ -110,6 +115,7 @@
     &__count {
         display: flex;
         gap: 6px;
+        grid-gap: 6px;
         button {
             width: 34px;
             height: 34px;
@@ -140,6 +146,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        grid-gap: 8px;
     }
     &__content {
         flex: 0 1 493px;
@@ -182,16 +189,19 @@
         display: flex;
         align-items: center;
         gap: 16px;
+        grid-gap: 16px;
         font-size: 14px;
         line-height: 12px;
         & > div {
             display: flex;
             gap: 4px;
+            grid-gap: 4px;
         }
     }
     &__tabs {
         display: flex;
         gap: 42px;
+        grid-gap: 42px;
         background: #efefef;
         border-radius: 12px;
         padding: 4px;
@@ -205,6 +215,7 @@
         }
         @media (max-width: (460px)) {
             gap: 4px;
+            grid-gap: 4px;
             margin-bottom: 16px;
         }
         &-block {
@@ -271,6 +282,7 @@
             margin-bottom: 19px;
             flex-wrap: wrap;
             gap: 8px;
+            grid-gap: 8px;
             @media (max-width: (480px)) {
                 flex-direction: column;
                 align-items: baseline;
@@ -300,6 +312,7 @@
             display: flex;
             align-items: baseline;
             gap: 5px;
+            grid-gap: 5px;
             margin-bottom: 12px;
             span:last-child {
                 color: #004991;
