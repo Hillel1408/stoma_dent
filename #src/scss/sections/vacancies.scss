@@ -1,0 +1,59 @@
+.vacancies {
+    &__spoiler {
+        background: #efefef;
+        border: 1px solid #c2c2c2;
+        border-radius: 8px;
+        padding: 21px 20px 20px 23px;
+        max-width: 729px;
+        margin-bottom: 11px;
+        @media (max-width: (460px)) {
+            padding: 16px 20px 15px 23px;
+        }
+        &-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            gap: 10px;
+            &.active svg {
+                transform: rotate(45deg);
+            }
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22 / 16 * 100%;
+            color: #333333;
+            @media (max-width: (460px)) {
+                font-size: 14px;
+            }
+        }
+        &-btn {
+            background: transparent;
+            svg {
+                transition: 0.2s;
+                @media (max-width: (460px)) {
+                    width: 14px;
+                }
+            }
+        }
+        &-text {
+            overflow: hidden;
+            max-height: 0;
+            transition: 0.2s;
+        }
+        &-list {
+            margin-top: 15px;
+            padding-left: 25px;
+            li {
+                list-style-type: initial;
+            }
+        }
+        &-subtitle {
+            font-weight: 700;
+        }
+        &-block {
+            margin-top: 15px;
+        }
+    }
+}
