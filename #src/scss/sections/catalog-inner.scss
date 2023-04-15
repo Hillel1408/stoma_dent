@@ -213,6 +213,12 @@
                 @media (max-width: 450px) {
                     width: 14px;
                 }
+                &.active {
+                    path {
+                        fill: #004991;
+                        stroke: #004991;
+                    }
+                }
             }
         }
         &:hover {
