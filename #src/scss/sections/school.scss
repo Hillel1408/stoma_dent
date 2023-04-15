@@ -1,0 +1,38 @@
+.school {
+    padding-bottom: 40px;
+    &__item {
+        padding-bottom: 14px;
+        margin-bottom: 12px;
+        display: flex;
+        gap: 11px;
+        @media (max-width: (440px)) {
+            flex-direction: column-reverse;
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid #c2c2c2;
+        }
+        &-img {
+            min-width: 180px;
+            border: 1px solid #c2c2c2;
+            border-radius: 8px;
+            overflow: hidden;
+            img {
+                height: 92px;
+                width: 100%;
+                object-fit: cover;
+                @media (max-width: (440px)) {
+                    height: 172px;
+                }
+            }
+        }
+        &-title {
+            a {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                color: #333333;
+            }
+            max-width: 422px;
+        }
+    }
+}
