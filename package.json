@@ -2,6 +2,7 @@
     "name": "responsive",
     "version": "1.0.0",
     "description": "worked-gulp",
+    "homepage": "https://hillel1408.github.io/stoma_dent/",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
